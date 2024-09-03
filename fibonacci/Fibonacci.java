@@ -9,23 +9,29 @@ public class Fibonacci {
             System.out.print("Digite um numero: ");
             int n = scan.nextInt();
 
-            long result = fibonacci(n);
-
-            System.out.println("Fibonacci de " + n + " eh: " + result);
+            if (isFibonacci(n)) {
+                System.out.println(n + " pertence a sequencia de Fibonacci.");
+            } else {
+                System.out.println(n + " nao pertence a sequencia de Fibonacci.");
+            }
         }
     }
 
-    public static long fibonacci(int n) {
-        if (n <= 1) return n;
+    public static boolean isFibonacci(int num) {
+        if (num < 0) return false;
+
+        int a = 0, b = 1;
         
-        long[] fib = new long[n + 1];
-        fib[0] = 0;
-        fib[1] = 1;
-        
-        for (int i = 2; i <= n; i++) {
-            fib[i] = fib[i - 1] + fib[i - 2];
+        if (num == a || num == b) return true;
+
+        int fib = a + b;
+        while (fib <= num) {
+            if (fib == num) return true;
+            a = b;
+            b = fib;
+            fib = a + b;
         }
         
-        return fib[n];
+        return false;
     }
 }
