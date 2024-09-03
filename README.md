@@ -4,13 +4,13 @@
 
 IMPORTANTE: Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
 
-Link: 
+Link: <a href="https://github.com/leomitx10/Desafio/blob/main/fibonacci/Fibonacci.java" target="_blank">Resposta 1</a>
 
 2) Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.
 
 IMPORTANTE: Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
 
-Link: 
+Link: <a href="https://github.com/leomitx10/Desafio/blob/main/verificastring/VerificaString.java" target="_blank">Resposta 2</a>
 
 3) Observe o trecho de código abaixo:
 
